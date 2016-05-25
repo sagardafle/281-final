@@ -13,9 +13,9 @@ var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-//var url = 'mongodb://ec2-54-82-240-2.compute-1.amazonaws.com:27017,ec2-54-174-128-21.compute-1.amazonaws.com:27017,ec2-54-172-180-67.compute-1.amazonaws.com:27017/test?w=0&readPreference=secondary';
+var url = 'mongodb://ec2-54-82-240-2.compute-1.amazonaws.com:27017,ec2-54-174-128-21.compute-1.amazonaws.com:27017,ec2-54-172-180-67.compute-1.amazonaws.com:27017/test?w=0&readPreference=secondary';
 
-var url = 'mongodb://ec2-54-82-240-2.compute-1.amazonaws.com:27017/test?w=0&readPreference=secondary';
+//var url = 'mongodb://ec2-54-82-240-2.compute-1.amazonaws.com:27017/test?w=0&readPreference=secondary';
 
 //We need a function which handles requests and send response
 app.get('/', function (req, res) {
